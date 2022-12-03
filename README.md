@@ -4,11 +4,11 @@ This automated tests are built for fluege.de app using Selenium libraries, TestN
 
 
 **Languages, libraries and tools used <br/>**
-Java 8 <br/>
-Selenium 4(latest) <br/>
-TestNG <br/>
-Extent reports <br/>
-Eclipse <br/>
+1.Java 8 <br/>
+2.Selenium 4(latest) <br/>
+3.TestNG <br/>
+4.Extent reports <br/>
+5.Eclipse <br/>
 Above Features are used to make code simple, generic, understandable, clean and easily maintainable for future development. <br/>
 
 **Automated tests <br/>**
