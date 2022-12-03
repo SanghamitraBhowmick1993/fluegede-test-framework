@@ -19,7 +19,6 @@ Automated tests
 To run a test, open the Project window, and then open src./test/resources folder name and then open testng.xml file and right click to run as TestNG tests.
 
 To see the reports, open the Project window, and then open the Reports Folder(/test-output/SparkReport) and then double click on Extent.html file or open the Extent.html file on the default browser.
-Procountor-report-file.png
 
 Prerequisites
 Eclipse
