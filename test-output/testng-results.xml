@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="E2E Test Framework" duration-ms="310638" started-at="2022-12-03T13:27:05Z" finished-at="2022-12-03T13:32:15Z">
+    <groups>
+    </groups>
+    <test name="my e2e test chrome" duration-ms="310638" started-at="2022-12-03T13:27:05Z" finished-at="2022-12-03T13:32:15Z">
+      <class name="com.mytests.FlightOfferDetailsTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.mytests.FlightOfferDetailsTest@282003e1]" name="setUpTest" is-config="true" duration-ms="35524" started-at="2022-12-03T13:28:34Z" finished-at="2022-12-03T13:29:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setupSpark(org.testng.ITestResult)[pri:0, instance:com.mytests.FlightOfferDetailsTest@282003e1]" name="setupSpark" is-config="true" duration-ms="1" started-at="2022-12-03T13:29:10Z" finished-at="2022-12-03T13:29:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFlightOfferDetailsScreen status=SUCCESS method=FlightOfferDetailsTest.verifyFlightOfferDetailsScreen()[pri:1, instance:com.mytests.FlightOfferDetailsTest@282003e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSpark -->
+        <test-method status="PASS" signature="verifyFlightOfferDetailsScreen()[pri:1, instance:com.mytests.FlightOfferDetailsTest@282003e1]" name="verifyFlightOfferDetailsScreen" duration-ms="56100" started-at="2022-12-03T13:29:10Z" finished-at="2022-12-03T13:30:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlightOfferDetailsScreen -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.mytests.FlightOfferDetailsTest@282003e1]" name="tearDownSuite" is-config="true" duration-ms="1508" started-at="2022-12-03T13:30:06Z" finished-at="2022-12-03T13:30:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.mytests.FlightOfferDetailsTest -->
+      <class name="com.mytests.ItenaryDetailsTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.mytests.ItenaryDetailsTest@7fad8c79]" name="setUpTest" is-config="true" duration-ms="33827" started-at="2022-12-03T13:30:07Z" finished-at="2022-12-03T13:30:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setupSpark(org.testng.ITestResult)[pri:0, instance:com.mytests.ItenaryDetailsTest@7fad8c79]" name="setupSpark" is-config="true" duration-ms="5" started-at="2022-12-03T13:30:41Z" finished-at="2022-12-03T13:30:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFlightOfferDetailsScreen status=SUCCESS method=ItenaryDetailsTest.verifyFlightOfferDetailsScreen()[pri:1, instance:com.mytests.ItenaryDetailsTest@7fad8c79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSpark -->
+        <test-method status="PASS" signature="verifyFlightOfferDetailsScreen()[pri:1, instance:com.mytests.ItenaryDetailsTest@7fad8c79]" name="verifyFlightOfferDetailsScreen" duration-ms="55382" started-at="2022-12-03T13:30:41Z" finished-at="2022-12-03T13:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlightOfferDetailsScreen -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.mytests.ItenaryDetailsTest@7fad8c79]" name="tearDownSuite" is-config="true" duration-ms="2120" started-at="2022-12-03T13:31:36Z" finished-at="2022-12-03T13:31:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.mytests.ItenaryDetailsTest -->
+      <class name="com.mytests.SearchFlightTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="setUpTest" is-config="true" duration-ms="37737" started-at="2022-12-03T13:27:05Z" finished-at="2022-12-03T13:27:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setupSpark(org.testng.ITestResult)[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="setupSpark" is-config="true" duration-ms="335" started-at="2022-12-03T13:27:42Z" finished-at="2022-12-03T13:27:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=enterFlightDetails status=SUCCESS method=SearchFlightTest.enterFlightDetails()[pri:1, instance:com.mytests.SearchFlightTest@4148db48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSpark -->
+        <test-method status="PASS" signature="enterFlightDetails()[pri:1, instance:com.mytests.SearchFlightTest@4148db48]" name="enterFlightDetails" duration-ms="14573" started-at="2022-12-03T13:27:43Z" finished-at="2022-12-03T13:27:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFlightDetails -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="tearDownSuite" is-config="true" duration-ms="1584" started-at="2022-12-03T13:27:57Z" finished-at="2022-12-03T13:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="setUpTest" is-config="true" duration-ms="33545" started-at="2022-12-03T13:27:59Z" finished-at="2022-12-03T13:28:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setupSpark(org.testng.ITestResult)[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="setupSpark" is-config="true" duration-ms="34" started-at="2022-12-03T13:28:32Z" finished-at="2022-12-03T13:28:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPageTitleTest status=SUCCESS method=SearchFlightTest.verifyLoginPageTitleTest()[pri:1, instance:com.mytests.SearchFlightTest@4148db48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSpark -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.mytests.SearchFlightTest@4148db48]" name="verifyLoginPageTitleTest" duration-ms="319" started-at="2022-12-03T13:28:32Z" finished-at="2022-12-03T13:28:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="tearDownSuite" is-config="true" duration-ms="1264" started-at="2022-12-03T13:28:33Z" finished-at="2022-12-03T13:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="setUpTest" is-config="true" duration-ms="35558" started-at="2022-12-03T13:31:39Z" finished-at="2022-12-03T13:32:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setupSpark(org.testng.ITestResult)[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="setupSpark" is-config="true" duration-ms="4" started-at="2022-12-03T13:32:14Z" finished-at="2022-12-03T13:32:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPageHeaderTest status=SUCCESS method=SearchFlightTest.verifyLoginPageHeaderTest()[pri:2, instance:com.mytests.SearchFlightTest@4148db48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSpark -->
+        <test-method status="PASS" signature="verifyLoginPageHeaderTest()[pri:2, instance:com.mytests.SearchFlightTest@4148db48]" name="verifyLoginPageHeaderTest" duration-ms="60" started-at="2022-12-03T13:32:14Z" finished-at="2022-12-03T13:32:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageHeaderTest -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="tearDownSuite" is-config="true" duration-ms="1018" started-at="2022-12-03T13:32:14Z" finished-at="2022-12-03T13:32:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.mytests.SearchFlightTest@4148db48]" name="teardown" is-config="true" duration-ms="974" started-at="2022-12-03T13:32:15Z" finished-at="2022-12-03T13:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.mytests.SearchFlightTest -->
+    </test> <!-- my e2e test chrome -->
+  </suite> <!-- E2E Test Framework -->
+</testng-results>
