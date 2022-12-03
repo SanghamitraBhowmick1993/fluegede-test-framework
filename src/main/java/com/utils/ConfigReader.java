@@ -24,31 +24,4 @@ public class ConfigReader {
 	public static String getUrl() {
 		return init_prop().getProperty("urlfluegede");
 	}
-
-	public static String getusernmeValue() {
-		return init_prop().getProperty("usernm");
-	}
-
-	public static String getpasswordValue() {
-		return init_prop().getProperty("password");
-	}
-
-	public static String emailDetails() {
-		return init_prop().getProperty("email");
-	}
-
-	public static String cardDetails() {
-		return init_prop().getProperty("cardNumber");
-	}
-
-	public static String monthYrDetails() {
-		return init_prop().getProperty("monthYear");
-	}
-
-	public static String cvcDetails() {
-		return init_prop().getProperty("cvc");
-	}
-	public static String zipDetails() {
-		return init_prop().getProperty("zip");
-	}
 }
