@@ -35,7 +35,11 @@ docker pull selenium/hub:3.141.59, docker pull selenium/standalone-chrome,docker
 3. Running the images to have the containers ready (hub and node) <br/>
 Commands: <br/>
 docker run -d -P -p "4444:4444" --name selenium-hub selenium/hub:3.141.59 <br/>
+For Chrome: <br/>
 docker run -d -P -p 5900:5900 --link selenium-hub:hub selenium/node-chrome-debug <br/>
 docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome <br/>
-4. Opening selenium grid in host/server: http://localhost:4444/grid/console <br/>
+For Firefox <br/>
+docker run -d -p 4446:4444 -v /dev/shm:/dev/shm selenium/standalone-firefox <br/>
+docker run -d -P -p 5901:5900 --link selenium-hub:hub selenium/node-firefox-debug <br/>
+4. Opening selenium grid in host/server: http://localhost:4444/grid/console <br/> <br/>
 5. Opening VNC Viewer for chrome and firefox (127.0.0.1:5900 - for chrome) and (127.0.0.1:5901 - for firefox) <br/>
