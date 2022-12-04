@@ -6,11 +6,13 @@
 	</listeners> -->
 
 	<test name="my e2e test chrome">
+	<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.mytests.SearchFlightTest" />			
+			<class name="com.mytests.SearchFlightTest" />		
 		</classes>
 	</test> 
 	<test name="my e2e test firefox">
+	<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.mytests.SearchFlightTest" />			
 		</classes>

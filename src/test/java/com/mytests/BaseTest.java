@@ -1,6 +1,8 @@
 package com.mytests;
 
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -8,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -33,23 +37,31 @@ public class BaseTest {
 	public ConfigReader configFileReader;
 	ExtentReports extent = new ExtentReports();
 	ExtentSparkReporter spark = new ExtentSparkReporter("ExtentSparkReport.html");
+	DesiredCapabilities cap = new DesiredCapabilities();
 
 	@BeforeMethod
 	@Parameters(value = { "browser" })
-	public void setUpTest(String browser) {
+	public void setUpTest(String browser) throws MalformedURLException {
 		if (browser.equals("chrome")) {
+			/*for running tests without continious integration*/
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-		} else if (browser.equals("ff")) {
+			/*for running in Docker:*/
+//			cap.setBrowserName("chrome");			
+//			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
+		} else if (browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			/*for Docker:*/
+//			cap.setBrowserName("firefox");			
+//			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		} else {
 			System.out.println("no browser is defined in xml file...");
 		}
 		page = new BasePage(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));
 		driver.get(ConfigReader.getUrl());
 
 		/*
