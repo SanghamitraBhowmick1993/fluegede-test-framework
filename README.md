@@ -29,7 +29,7 @@ testng_docker.xml file has the docker configurations. The BaseTest(src/test/java
 
 **Prerequisites for running tests in docker <br/>**
 1. Docker installed in server/host system <br/>
-2. Pulling docker hub, selenium standalone (Chrome/Firefox) and selenium debug(to view tests in VNC) <br/>
+2. Pulling selenium hub, selenium standalone (Chrome/Firefox) and selenium debug(to view tests in VNC) <br/>
 Commands: <br/>
 docker pull selenium/hub:3.141.59, docker pull selenium/standalone-chrome,docker pull selenium/node-chrome-debug (same for firefox) <br/>
 3. Running the images to have the containers ready (hub and node) <br/>
@@ -37,3 +37,5 @@ Commands: <br/>
 docker run -d -P -p "4444:4444" --name selenium-hub selenium/hub:3.141.59 <br/>
 docker run -d -P -p 5900:5900 --link selenium-hub:hub selenium/node-chrome-debug <br/>
 docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome <br/>
+4. Opening selenium grid in host/server: http://localhost:4444/grid/console <br/>
+5. Opening VNC Viewer for chrome and firefox (127.0.0.1:5900 - for chrome) and (127.0.0.1:5901 - for firefox) <br/>
