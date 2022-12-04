@@ -23,3 +23,17 @@ Java <br/>
 **Built With <br/>**
 Eclipse IDE for Java Developers (includes Incubating components) <br/>
 Java 8 - Language used to build the application <br/>
+
+**Running tests in Docker Container with Selenium Grid <br/>**
+testng_docker.xml file has the docker configurations. The BaseTest(src/test/java) class has remote webdriver configurations for Selenium Hub
+
+**Prerequisites for running tests in docker <br/>**
+1. Docker installed in server/host system
+2. Pulling docker hub, selenium standalone (Chrome/Firefox) and selenium debug(to view tests in VNC)
+Commands:
+docker pull selenium/hub:3.141.59, docker pull selenium/standalone-chrome,docker pull selenium/node-chrome-debug (same for firefox)
+3. Running the images to have the containers ready (hub and node)
+Commands:
+docker run -d -P -p "4444:4444" --name selenium-hub selenium/hub:3.141.59
+docker run -d -P -p 5900:5900 --link selenium-hub:hub selenium/node-chrome-debug
+docker run -d -p 4445:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
